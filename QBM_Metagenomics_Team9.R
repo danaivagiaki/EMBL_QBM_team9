@@ -91,7 +91,7 @@ ggplot(color_matrix_ext) +
 
 # REMOVE BATCH EFFECT OF STUDY
 
-# Add pseudocount of 10^-10 and take the log
+# Add pseudocount of 10^-10 and take the ln
 colorectal_lognorm <- bind_cols(colorectal_norm["Genus"], log(colorectal_norm[,2:ncol(colorectal_norm)] + 10^(-8)))
 
 long_colorectal_lognorm <- gather(colorectal_lognorm, key=Sample_ID, value=Relative_abundance, colnames(colorectal_lognorm)[2:ncol(colorectal_lognorm)]) %>% 
