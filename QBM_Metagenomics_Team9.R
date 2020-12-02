@@ -1,4 +1,4 @@
-setwd("~/Documents/PhD_Heidelberg/PREDOC_COURSE/QBM/")
+setwd("./PREDOC_COURSE/QBM/")
 library(tidyverse)
 library(rcompanion)
 library(ape)
